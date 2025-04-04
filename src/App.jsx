@@ -35,7 +35,7 @@ const App = () => {
         <Route path='/story-board' element={<GameInput />} />
         <Route path='/join-room' element={isLoggedIn ? (<JoinRoom/>) : (<Navigate to = '/login' />)} />
       </Routes> */}
-      <GameInput />
+      <Room />
     </div>
   )
 }

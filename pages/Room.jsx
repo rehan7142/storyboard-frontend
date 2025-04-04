@@ -16,9 +16,9 @@ const Room = () => {
         <div className="z-99 bg-circle-green rounded-full h-[12vw] w-[12vw] absolute bottom-0 right-0"></div>
       </div>
       <div className="foreground h-full w-full text-white absolute z-99 py-5 px-10">
-        <nav className="flex h-[5%] w-full items-start justify-end gap-10">
+        <nav className="flex h-[5%] w-full items-center justify-end gap-10">
           <FaRegUserCircle size={"3em"} />
-          <RiMenu3Fill size={"3em"} />
+          <button className="bg-[#55A4E6] text-[1.5vw] px-3 py-1 rounded-full">Log Out</button>
         </nav>
         <div className="h-[95%] flex items-center justify-center gap-14">
           <div>
@@ -26,7 +26,7 @@ const Room = () => {
               <p className="linear-gradient-text text-[5vw] font-semibold leading-none">
                 Welcome,
               </p>
-              <p className="linear-gradient-text text-[5vw] font-semibold leading-none">
+              <p className="linear-gradient-text text-[3vw] font-semibold leading-none">
                 {user.username}
               </p>
             </div>

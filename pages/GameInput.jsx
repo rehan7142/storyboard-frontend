@@ -15,9 +15,6 @@ const GameInput = () => {
             <div className="w-[75%]">
               <button className="bg-gradient-to-r from-[#18AFE6] to-[#D508E7] px-4 py-2 rounded-full text-[1.2vw] font-medium">Add line</button>
             </div>
-            {/*<div className="spectators mt-10">
-              <p className="text-[1.2vw] font-medium bg-gradient-to-r from-[#ffffff] to-[#D508E7] px-4 py-2 rounded-full">Spectators : </p>
-            </div>*/}
           </div>
         </div>
       </div>

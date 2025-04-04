@@ -23,7 +23,7 @@
     height: 800px;
     width: 300px;
     animation: border-animation 2s linear infinite;
-    background-color: rgb(76, 0, 76)
+    background-color: rgb(149, 2, 149)
 }
 @media screen and (max-width: 768px) {
     #login-form::after{
@@ -34,4 +34,7 @@
     100%{
         transform: translate(-50%,-50%) rotate(225deg);
     }   
+}
+.chat-inside::-webkit-scrollbar{
+    display: none;
 }

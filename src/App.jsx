@@ -25,7 +25,7 @@ const App = () => {
   }, [isLoggedIn , navigate])
   return (
     <div className='h-screen w-full bg-zinc-950 overflow-hidden'>
-      <Routes>
+      {/* <Routes>
         <Route path='/signup' element={<SignUp />}/>
         <Route path='/login' element={<Login />}/>
         <Route path='/' element={isLoggedIn ? (<Room />) : (<Navigate to = '/login' />)}/>
@@ -34,7 +34,8 @@ const App = () => {
         <Route path='/reset-password' element={<ResetPassword />} />
         <Route path='/story-board' element={<GameInput />} />
         <Route path='/join-room' element={isLoggedIn ? (<JoinRoom/>) : (<Navigate to = '/login' />)} />
-      </Routes>
+      </Routes> */}
+      <GameInput />
     </div>
   )
 }

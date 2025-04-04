@@ -101,7 +101,7 @@ const ForegroundLogin = () => {
                 <Link to='/reset-password'>Forget Password?</Link>
               </button>
             </div>
-            <div className="my-2 w-full px-[8%] flex gap-5 items-center justify-between">
+            {/* <div className="my-2 w-full px-[8%] flex gap-5 items-center justify-between">
               <div className="w-[45%] h-[1px] bg-zinc-300"></div>
               <p className="text-[2.25vw] md:text-[1.25vw] font-medium">Or</p>
               <div className="w-[45%] h-[1px] bg-zinc-300"></div>
@@ -164,7 +164,7 @@ const ForegroundLogin = () => {
                   ></path>
                 </svg>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

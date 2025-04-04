@@ -109,7 +109,7 @@ const ForegroundSignup = () => {
                 <Link to='/reset-password'>Forget Password?</Link>
               </button>
             </div>
-            <div className="my-2 w-full px-[8%] flex gap-5 items-center justify-between">
+            {/* <div className="my-2 w-full px-[8%] flex gap-5 items-center justify-between">
               <div className="w-[45%] h-[1px] bg-zinc-300"></div>
               <p className="text-[2.25vw] md:text-[1.25vw] font-medium">Or</p>
               <div className="w-[45%] h-[1px] bg-zinc-300"></div>
@@ -171,8 +171,8 @@ const ForegroundSignup = () => {
                     d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"
                   ></path>
                 </svg>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
         </div>
       </div>

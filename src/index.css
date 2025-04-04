@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+.bg-circle-purple{ 
+    background: linear-gradient(180deg, rgb(173, 0, 173),rgb(23, 0, 23) 50% );
+    filter: blur(1.75rem);
+}
+.bg-circle-green{ 
+    background: linear-gradient(180deg, rgb(1, 122, 1) ,rgb(0, 21, 0) 50%);
+    filter: blur(1.75rem);
+}
+#submit-btn{
+    background: linear-gradient(90deg, rgb(69, 0, 69), rgb(255, 247, 231));
+}
+.btn{
+    background: linear-gradient(90deg, rgb(69, 0, 69), rgb(255, 247, 231));
+}
+#login-form::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    height: 800px;
+    width: 300px;
+    animation: border-animation 2s linear infinite;
+    background-color: rgb(76, 0, 76)
+}
+@media screen and (max-width: 768px) {
+    #login-form::after{
+        width: 150px;
+    }
+}
+@keyframes border-animation {
+    100%{
+        transform: translate(-50%,-50%) rotate(225deg);
+    }   
+}

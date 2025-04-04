@@ -10,6 +10,7 @@ import Room from '../pages/Room'
 import GameInput from '../pages/GameInput'
 import CreateRoom from '../pages/CreateRoom'
 import JoinRoom from '../pages/CreateRoom'
+import Story from '../pages/story'
 const App = () => {
   const {isLoggedIn} = useAuth();
   const navigate = useNavigate()
@@ -24,8 +25,8 @@ const App = () => {
     }
   }, [isLoggedIn , navigate])
   return (
-    <div className='h-screen w-full bg-zinc-950 overflow-hidden'>
-      {/* <Routes>
+      <div className='h-screen w-full bg-zinc-950 overflow-hidden'>
+      <Routes>
         <Route path='/signup' element={<SignUp />}/>
         <Route path='/login' element={<Login />}/>
         <Route path='/' element={isLoggedIn ? (<Room />) : (<Navigate to = '/login' />)}/>
@@ -34,8 +35,7 @@ const App = () => {
         <Route path='/reset-password' element={<ResetPassword />} />
         <Route path='/story-board' element={<GameInput />} />
         <Route path='/join-room' element={isLoggedIn ? (<JoinRoom/>) : (<Navigate to = '/login' />)} />
-      </Routes> */}
-      <Story />
+      </Routes>
     </div>
   )
 }

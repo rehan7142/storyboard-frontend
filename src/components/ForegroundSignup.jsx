@@ -48,7 +48,7 @@ const ForegroundSignup = () => {
       <div className="w-full md:w-1/2 h-[20%] md:h-full flex flex-col items-center justify-center md:items-start md:justify-start pt-[10%] px-[5%]">
         <h1 className="text-[10vw] md:text-[4vw] uppercase font-semibold">Welcome</h1>
         <p className="text-[2.5vw] text-center md:text-left md:text-[1.25vw]">
-          Welcome to Your Game Name!
+          Welcome to TaleThread
           <br />
           Immerse yourself in an exciting interactive story where your choices
           shape the adventure. Sign up to begin your journey and see where the

@@ -2,7 +2,7 @@ import React from "react";
 
 const GameInput = () => {
   return (
-    <div className="h-screen w-full bg-[url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2V2eGdqOXY2ZWxia3poY2hvbDU1ZGdta3AybGE0anQzaGx2YTg4NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/94P1LEMyuVEeA/giphy.gif)] flex">
+    <div className="h-screen w-full text-white bg-[url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2V2eGdqOXY2ZWxia3poY2hvbDU1ZGdta3AybGE0anQzaGx2YTg4NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/94P1LEMyuVEeA/giphy.gif)] flex">
       <div className="h-full w-[80%]">
         <div className="foreground h-full w-[80%] absolute z-999">
           <div className="h-full w-full flex flex-col items-center justify-center gap-5 px-[10%]">

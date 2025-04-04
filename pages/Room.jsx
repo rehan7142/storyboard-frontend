@@ -4,16 +4,29 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { RiMenu3Fill } from "react-icons/ri";
 import { useAuth } from "../context/AppContext";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
 
 const Room = () => {
     const {user} = useAuth();
   return (
-    <div className="h-screen w-full bg-zinc-950 absolute">
+    <div className="h-screen w-full bg-zinc-950 absolute overflow-hidden">
       <div className="backgound h-full w-full bg-zinc-950 absolute">
-        <div className="z-99 bg-circle-purple rounded-full h-[12vw] w-[12vw] absolute top-0 left-0"></div>
-        <div className="z-99 bg-circle-purple rounded-full h-[12vw] w-[12vw] absolute top-0 right-0"></div>
-        <div className="z-99 bg-circle-green rounded-full h-[12vw] w-[12vw] absolute bottom-0 left-0"></div>
-        <div className="z-99 bg-circle-green rounded-full h-[12vw] w-[12vw] absolute bottom-0 right-0"></div>
+        <motion.div 
+        animate={{x:[0, 10, 10, 0, 0], y:[0, 0, 10, 10, 0]}}
+        transition={{duration:3, repeat:Infinity}}
+        className="z-99 bg-circle-purple rounded-full h-[12vw] w-[12vw] absolute top-0 left-0"></motion.div>
+        <motion.div 
+        animate={{x:[0, 10, 10, 0, 0], y:[0, 0, 10, 10, 0]}}
+        transition={{duration:3, repeat:Infinity}}
+        className="z-99 bg-circle-purple rounded-full h-[12vw] w-[12vw] absolute top-0 right-0"></motion.div>
+        <motion.div 
+        animate={{x:[0, 10, 10, 0, 0], y:[0, 0, 10, 10, 0]}}
+        transition={{duration:3, repeat:Infinity}}
+        className="z-99 bg-circle-green rounded-full h-[12vw] w-[12vw] absolute bottom-0 left-0"></motion.div>
+        <motion.div 
+        animate={{x:[0, 10, 10, 0, 0], y:[0, 0, 10, 10, 0]}}
+        transition={{duration:3, repeat:Infinity}}
+        className="z-99 bg-circle-green rounded-full h-[12vw] w-[12vw] absolute bottom-0 right-0"></motion.div>
       </div>
       <div className="foreground h-full w-full text-white absolute z-99 py-5 px-10">
         <nav className="flex h-[5%] w-full items-center justify-end gap-10">

@@ -22,16 +22,16 @@ const JoinRoom = ()=> {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen w-full text-white relative">
+    <div className="flex items-center justify-center h-screen w-full text-white relative bg-[url()]">
       <div className="h-full w-full z-1 absolute flex flex-col md:flex-row">
         <motion.div
           initial={{ x: 0, y: 0 }}
           animate={{ x: [0, 40, 60, 0], y: [0, -30, 10, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-          className="z-99 bg-circle-purple rounded-full h-[12vw] w-[12vw] absolute top-[20%] left-[55%] -translate-x-1/2 -translate-y-1/2"
+          className="bg-circle-purple rounded-full h-[12vw] w-[12vw] absolute top-[20%] left-[55%] -translate-x-1/2 -translate-y-1/2"
         ></motion.div>
         <div className="w-full md:w-1/2 h-[20%] md:h-full flex flex-col items-center justify-center md:items-start md:justify-start pt-[10%] px-[5%]">
-          <h1 className="text-[10vw] md:text-[4vw] uppercase font-semibold">Welcome</h1>
+          <h1 className="text-[10vw] md:text-[4vw] uppercase font-semibold ">Welcome</h1>
           <p className="text-[2.5vw] text-center md:text-left md:text-[1.25vw]">
             {'Welcome ' + user.username}
             <br />
@@ -39,8 +39,8 @@ const JoinRoom = ()=> {
           </p>
         </div>
         <div className="w-full md:w-1/2 h-[80%] md:h-full flex items-center justify-center">
-          <div className="relative w-[65%] h-[75%] flex flex-col items-center justify-center bg-zinc-950 p-1 md:p-1.5 overflow-hidden">
-            <div className="h-full w-full flex flex-col items-center justify-center py-[10%] relative bg-zinc-950 z-9">
+          <div className="relative w-[65%] h-[75%] flex flex-col items-center justify-center bg-gradient-to-b from-[#18AFE6] to-[#D508E7] p-1 md:p-1.5 overflow-hidden rounded-2xl">
+            <div className="h-full w-full flex flex-col items-center justify-center py-[10%] relative bg-zinc-950 z-9 rounded-2xl">
               <h1 className="capitalize text-[5vw] md:text-[2.5vw] font-semibold">
                 {isCreating ? "Create Room" : "Join Room"}
               </h1>

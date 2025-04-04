@@ -12,7 +12,7 @@
     background: linear-gradient(90deg, rgb(69, 0, 69), rgb(255, 247, 231));
 }
 .btn{
-    background: linear-gradient(90deg, rgb(69, 0, 69), rgb(255, 247, 231));
+    background: linear-gradient(90deg, #18AFE6, #D508E7);
 }
 #login-form::after{
     content: "";

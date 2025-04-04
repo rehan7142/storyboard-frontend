@@ -8,7 +8,7 @@ import Logout from '../pages/Logout'
 import { useAuth } from '../context/AppContext'
 import Room from '../pages/Room'
 import GameInput from '../pages/GameInput'
-// import CreateRoom from '../pages/CreateRoom'
+import CreateRoom from '../pages/CreateRoom'
 import JoinRoom from '../pages/CreateRoom'
 const App = () => {
   const {isLoggedIn} = useAuth();
@@ -35,7 +35,7 @@ const App = () => {
         <Route path='/story-board' element={<GameInput />} />
         <Route path='/join-room' element={isLoggedIn ? (<JoinRoom/>) : (<Navigate to = '/login' />)} />
       </Routes> */}
-      <Room />
+      <Story />
     </div>
   )
 }

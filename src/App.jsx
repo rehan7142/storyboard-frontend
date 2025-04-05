@@ -30,7 +30,6 @@ const App = () => {
         <Route path='/signup' element={<SignUp />}/>
         <Route path='/login' element={<Login />}/>
         <Route path='/' element={isLoggedIn ? (<Room />) : (<Navigate to = '/login' />)}/>
-        
         <Route path='/logout' element={<Logout />} />
         <Route path='/reset-password' element={<ResetPassword />} />
         <Route path='/story-board' element={<GameInput />} />
